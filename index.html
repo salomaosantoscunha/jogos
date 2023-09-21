@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+<h1>Bem-vindo ao Jogo de Adivinhação!</h1>
+<form method="POST" action="/jogar">
+    <p>Tentativa {{ tentativa }} de {{ total_de_tentativas }}</p>
+    <label for="chute">Digite o seu número:</label>
+    <input type="number" id="chute" name="chute" min="1" max="100">
+    <input type="submit" value="Chutar">
+</form>
+<p>{{ mensagem }}</p>
+</body>
+</html>
